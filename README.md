@@ -1,0 +1,1470 @@
+# React Bootstrap Icons
+![npm](https://img.shields.io/npm/v/react-bs-icons) ![npm bundle size (version)](https://img.shields.io/bundlephobia/min/react-bs-icons/1.0.0) ![GitHub release (by tag)](https://img.shields.io/github/downloads/khairnar2960/react-bs-icons/stable/total) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hy/react-bs-icons) ![npm](https://img.shields.io/npm/dy/react-bs-icons) ![GitHub issues](https://img.shields.io/github/issues-raw/khairnar2960/react-bs-icons) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/khairnar2960/react-bs-icons)
+
+Bootstrap icons for React. This package provides over 2000 Bootstrap icons as React components.
+
+## Installation
+
+Install the package using npm or yarn:
+
+```bash
+npm install react-bs-icons
+```
+
+or
+
+```bash
+yarn add react-bs-icons
+```
+
+## Usage
+
+### Dynamic Import
+
+You can dynamically import icons as needed:
+
+```jsx
+import React, { useState, useEffect } from 'react';
+import { loadIcon } from 'react-bs-icons';
+
+const MyComponent = () => {
+  const [Icon, setIcon] = useState(null);
+
+  useEffect(() => {
+    loadIcon('Activity').then(setIcon);
+  }, []);
+
+  return (
+    <div>
+      {Icon && <Icon className="my-icon" />}
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+
+### Static Import
+
+You can also statically import individual icons:
+
+```jsx
+import React from 'react';
+import { Activity } from 'react-bs-icons/icons/activity';
+
+const MyComponent = () => (
+  <div>
+    <Activity className="my-icon" />
+  </div>
+);
+
+export default MyComponent;
+```
+
+## Available Icons
+
+Below is the list of available icons:
+
+- ZeroCircle (Filled)
+- ZeroSquare (Filled)
+- OneCircle (Filled)
+- OneSquare (Filled)
+- OneTwoThree
+- TwoCircle (Filled)
+- TwoSquare (Filled)
+- ThreeCircle (Filled)
+- ThreeSquare (Filled)
+- FourCircle (Filled)
+- FourSquare (Filled)
+- FiveCircle (Filled)
+- FiveSquare (Filled)
+- SixCircle (Filled)
+- SixSquare (Filled)
+- SevenCircle (Filled)
+- SevenSquare (Filled)
+- EightCircle (Filled)
+- EightSquare (Filled)
+- NineCircle (Filled)
+- NineSquare (Filled)
+- Activity
+- Airplane (Filled)
+- AirplaneEngines (Filled)
+- Alarm (Filled)
+- Alexa
+- AlignBottom
+- AlignCenter
+- AlignEnd
+- AlignMiddle
+- AlignStart
+- AlignTop
+- Alipay
+- Alphabet
+- AlphabetUppercase
+- Alt
+- Amazon
+- Amd
+- Android
+- Android2
+- App
+- AppIndicator
+- Apple
+- Archive (Filled)
+- Arrow90degDown
+- Arrow90degLeft
+- Arrow90degRight
+- Arrow90degUp
+- ArrowBarDown
+- ArrowBarLeft
+- ArrowBarRight
+- ArrowBarUp
+- ArrowClockwise
+- ArrowCounterclockwise
+- ArrowDown
+- ArrowDownCircle (Filled)
+- ArrowDownLeftCircle (Filled)
+- ArrowDownLeftSquare (Filled)
+- ArrowDownRightCircle (Filled)
+- ArrowDownRightSquare (Filled)
+- ArrowDownSquare (Filled)
+- ArrowDownLeft
+- ArrowDownRight
+- ArrowDownShort
+- ArrowDownUp
+- ArrowLeft
+- ArrowLeftCircle (Filled)
+- ArrowLeftSquare (Filled)
+- ArrowLeftRight
+- ArrowLeftShort
+- ArrowRepeat
+- ArrowReturnLeft
+- ArrowReturnRight
+- ArrowRight
+- ArrowRightCircle (Filled)
+- ArrowRightSquare (Filled)
+- ArrowRightShort
+- ArrowThroughHeart (Filled)
+- ArrowUp
+- ArrowUpCircle (Filled)
+- ArrowUpLeftCircle (Filled)
+- ArrowUpLeftSquare (Filled)
+- ArrowUpRightCircle (Filled)
+- ArrowUpRightSquare (Filled)
+- ArrowUpSquare (Filled)
+- ArrowUpLeft
+- ArrowUpRight
+- ArrowUpShort
+- Arrows
+- ArrowsAngleContract
+- ArrowsAngleExpand
+- ArrowsCollapse
+- ArrowsCollapseVertical
+- ArrowsExpand
+- ArrowsExpandVertical
+- ArrowsFullscreen
+- ArrowsMove
+- ArrowsVertical
+- AspectRatio (Filled)
+- Asterisk
+- At
+- Award (Filled)
+- Back
+- Backpack (Filled)
+- Backpack2 (Filled)
+- Backpack3 (Filled)
+- Backpack4 (Filled)
+- Backspace (Filled)
+- BackspaceReverse (Filled)
+- Badge3d (Filled)
+- Badge4k (Filled)
+- Badge8k (Filled)
+- BadgeAd (Filled)
+- BadgeAr (Filled)
+- BadgeCc (Filled)
+- BadgeHd (Filled)
+- BadgeSd (Filled)
+- BadgeTm (Filled)
+- BadgeVo (Filled)
+- BadgeVr (Filled)
+- BadgeWc (Filled)
+- Bag (Filled)
+- BagCheck (Filled)
+- BagDash (Filled)
+- BagHeart (Filled)
+- BagPlus (Filled)
+- BagX (Filled)
+- Balloon (Filled)
+- BalloonHeart (Filled)
+- Ban (Filled)
+- Bandaid (Filled)
+- Bank
+- Bank2
+- BarChart (Filled)
+- BarChartLine (Filled)
+- BarChartSteps
+- Basket (Filled)
+- Basket2 (Filled)
+- Basket3 (Filled)
+- Battery
+- BatteryCharging
+- BatteryFull
+- BatteryHalf
+- Behance
+- Bell (Filled)
+- BellSlash (Filled)
+- Bezier
+- Bezier2
+- Bicycle
+- Bing
+- Binoculars (Filled)
+- BlockquoteLeft
+- BlockquoteRight
+- Bluetooth
+- BodyText
+- Book (Filled)
+- BookHalf
+- Bookmark (Filled)
+- BookmarkCheck (Filled)
+- BookmarkDash (Filled)
+- BookmarkHeart (Filled)
+- BookmarkPlus (Filled)
+- BookmarkStar (Filled)
+- BookmarkX (Filled)
+- Bookmarks (Filled)
+- Bookshelf
+- Boombox (Filled)
+- Bootstrap (Filled)
+- BootstrapReboot
+- Border
+- BorderAll
+- BorderBottom
+- BorderCenter
+- BorderInner
+- BorderLeft
+- BorderMiddle
+- BorderOuter
+- BorderRight
+- BorderStyle
+- BorderTop
+- BorderWidth
+- BoundingBox
+- BoundingBoxCircles
+- Box (Filled)
+- BoxArrowDownLeft
+- BoxArrowDownRight
+- BoxArrowDown
+- BoxArrowInDown
+- BoxArrowInDownLeft
+- BoxArrowInDownRight
+- BoxArrowInLeft
+- BoxArrowInRight
+- BoxArrowInUp
+- BoxArrowInUpLeft
+- BoxArrowInUpRight
+- BoxArrowLeft
+- BoxArrowRight
+- BoxArrowUp
+- BoxArrowUpLeft
+- BoxArrowUpRight
+- BoxSeam (Filled)
+- Box2 (Filled)
+- Box2Heart (Filled)
+- Boxes
+- Braces
+- BracesAsterisk
+- Bricks
+- Briefcase (Filled)
+- BrightnessAltHigh (Filled)
+- BrightnessAltLow (Filled)
+- BrightnessHigh (Filled)
+- BrightnessLow (Filled)
+- Brilliance
+- Broadcast
+- BroadcastPin
+- BrowserChrome
+- BrowserEdge
+- BrowserFirefox
+- BrowserSafari
+- Brush (Filled)
+- Bucket (Filled)
+- Bug (Filled)
+- Building (Filled)
+- BuildingAdd
+- BuildingCheck
+- BuildingDash
+- BuildingDown
+- BuildingExclamation
+- BuildingFillAdd
+- BuildingFillCheck
+- BuildingFillDash
+- BuildingFillDown
+- BuildingFillExclamation
+- BuildingFillGear
+- BuildingFillLock
+- BuildingFillSlash
+- BuildingFillUp
+- BuildingFillX
+- BuildingGear
+- BuildingLock
+- BuildingSlash
+- BuildingUp
+- BuildingX
+- Buildings (Filled)
+- Bullseye
+- BusFront (Filled)
+- CCircle (Filled)
+- CSquare (Filled)
+- Cake (Filled)
+- Cake2 (Filled)
+- Calculator (Filled)
+- Calendar (Filled)
+- CalendarCheck (Filled)
+- CalendarDate (Filled)
+- CalendarDay (Filled)
+- CalendarEvent (Filled)
+- CalendarHeart (Filled)
+- CalendarMinus (Filled)
+- CalendarMonth (Filled)
+- CalendarPlus (Filled)
+- CalendarRange (Filled)
+- CalendarWeek (Filled)
+- CalendarX (Filled)
+- Calendar2 (Filled)
+- Calendar2Check (Filled)
+- Calendar2Date (Filled)
+- Calendar2Day (Filled)
+- Calendar2Event (Filled)
+- Calendar2Heart (Filled)
+- Calendar2Minus (Filled)
+- Calendar2Month (Filled)
+- Calendar2Plus (Filled)
+- Calendar2Range (Filled)
+- Calendar2Week (Filled)
+- Calendar2X (Filled)
+- Calendar3 (Filled)
+- Calendar3Event (Filled)
+- Calendar3Range (Filled)
+- Calendar3Week (Filled)
+- Calendar4
+- Calendar4Event
+- Calendar4Range
+- Calendar4Week
+- Camera (Filled)
+- Camera2
+- CameraReels (Filled)
+- CameraVideo (Filled)
+- CameraVideoOff (Filled)
+- Capslock (Filled)
+- Capsule
+- CapsulePill
+- CarFront (Filled)
+- CardChecklist
+- CardHeading
+- CardImage
+- CardList
+- CardText
+- CaretDown (Filled)
+- CaretDownSquare (Filled)
+- CaretLeft (Filled)
+- CaretLeftSquare (Filled)
+- CaretRight (Filled)
+- CaretRightSquare (Filled)
+- CaretUp (Filled)
+- CaretUpSquare (Filled)
+- Cart (Filled)
+- CartCheck (Filled)
+- CartDash (Filled)
+- CartPlus (Filled)
+- CartX (Filled)
+- Cart2
+- Cart3
+- Cart4
+- Cash
+- CashCoin
+- CashStack
+- Cassette (Filled)
+- Cast
+- CcCircle (Filled)
+- CcSquare (Filled)
+- Chat (Filled)
+- ChatDots (Filled)
+- ChatHeart (Filled)
+- ChatLeft (Filled)
+- ChatLeftDots (Filled)
+- ChatLeftHeart (Filled)
+- ChatLeftQuote (Filled)
+- ChatLeftText (Filled)
+- ChatQuote (Filled)
+- ChatRight (Filled)
+- ChatRightDots (Filled)
+- ChatRightHeart (Filled)
+- ChatRightQuote (Filled)
+- ChatRightText (Filled)
+- ChatSquare (Filled)
+- ChatSquareDots (Filled)
+- ChatSquareHeart (Filled)
+- ChatSquareQuote (Filled)
+- ChatSquareText (Filled)
+- ChatText (Filled)
+- Check
+- CheckAll
+- CheckCircle (Filled)
+- CheckLg
+- CheckSquare (Filled)
+- Check2
+- Check2All
+- Check2Circle
+- Check2Square
+- ChevronBarContract
+- ChevronBarDown
+- ChevronBarExpand
+- ChevronBarLeft
+- ChevronBarRight
+- ChevronBarUp
+- ChevronCompactDown
+- ChevronCompactLeft
+- ChevronCompactRight
+- ChevronCompactUp
+- ChevronContract
+- ChevronDoubleDown
+- ChevronDoubleLeft
+- ChevronDoubleRight
+- ChevronDoubleUp
+- ChevronDown
+- ChevronExpand
+- ChevronLeft
+- ChevronRight
+- ChevronUp
+- Circle (Filled)
+- CircleHalf
+- SlashCircle (Filled)
+- CircleSquare
+- Clipboard (Filled)
+- ClipboardCheck (Filled)
+- ClipboardData (Filled)
+- ClipboardHeart (Filled)
+- ClipboardMinus (Filled)
+- ClipboardPlus (Filled)
+- ClipboardPulse
+- ClipboardX (Filled)
+- Clipboard2 (Filled)
+- Clipboard2Check (Filled)
+- Clipboard2Data (Filled)
+- Clipboard2Heart (Filled)
+- Clipboard2Minus (Filled)
+- Clipboard2Plus (Filled)
+- Clipboard2Pulse (Filled)
+- Clipboard2X (Filled)
+- Clock (Filled)
+- ClockHistory
+- Cloud (Filled)
+- CloudArrowDown (Filled)
+- CloudArrowUp (Filled)
+- CloudCheck (Filled)
+- CloudDownload (Filled)
+- CloudDrizzle (Filled)
+- CloudFog (Filled)
+- CloudFog2 (Filled)
+- CloudHail (Filled)
+- CloudHaze (Filled)
+- CloudHaze2 (Filled)
+- CloudLightning (Filled)
+- CloudLightningRain (Filled)
+- CloudMinus (Filled)
+- CloudMoon (Filled)
+- CloudPlus (Filled)
+- CloudRain (Filled)
+- CloudRainHeavy (Filled)
+- CloudSlash (Filled)
+- CloudSleet (Filled)
+- CloudSnow (Filled)
+- CloudSun (Filled)
+- CloudUpload (Filled)
+- Clouds (Filled)
+- Cloudy (Filled)
+- Code
+- CodeSlash
+- CodeSquare
+- Coin
+- Collection (Filled)
+- CollectionPlay (Filled)
+- Columns
+- ColumnsGap
+- Command
+- Compass (Filled)
+- Cone
+- ConeStriped
+- Controller
+- Cookie
+- Copy
+- Cpu (Filled)
+- CreditCard (Filled)
+- CreditCardTwoBack (Filled)
+- CreditCardTwoFront (Filled)
+- Crop
+- Crosshair
+- Crosshair2
+- Cup (Filled)
+- CupHot (Filled)
+- CupStraw
+- CurrencyBitcoin
+- CurrencyDollar
+- CurrencyEuro
+- CurrencyExchange
+- CurrencyPound
+- CurrencyRupee
+- CurrencyYen
+- Cursor (Filled)
+- CursorText
+- Dash
+- DashCircle (Filled)
+- DashCircleDotted
+- DashLg
+- DashSquare (Filled)
+- DashSquareDotted
+- Database (Filled)
+- DatabaseAdd
+- DatabaseCheck
+- DatabaseDash
+- DatabaseDown
+- DatabaseExclamation
+- DatabaseFillAdd
+- DatabaseFillCheck
+- DatabaseFillDash
+- DatabaseFillDown
+- DatabaseFillExclamation
+- DatabaseFillGear
+- DatabaseFillLock
+- DatabaseFillSlash
+- DatabaseFillUp
+- DatabaseFillX
+- DatabaseGear
+- DatabaseLock
+- DatabaseSlash
+- DatabaseUp
+- DatabaseX
+- DeviceHdd (Filled)
+- DeviceSsd (Filled)
+- DiagramTwo (Filled)
+- DiagramThree (Filled)
+- Diamond (Filled)
+- DiamondHalf
+- DiceOne (Filled)
+- DiceTwo (Filled)
+- DiceThree (Filled)
+- DiceFour (Filled)
+- DiceFive (Filled)
+- DiceSix (Filled)
+- Disc (Filled)
+- Discord
+- Display (Filled)
+- Displayport (Filled)
+- DistributeHorizontal
+- DistributeVertical
+- DoorClosed (Filled)
+- DoorOpen (Filled)
+- Dot
+- Download
+- Dpad (Filled)
+- Dribbble
+- Dropbox
+- Droplet (Filled)
+- DropletHalf
+- Duffle (Filled)
+- Ear (Filled)
+- Earbuds
+- Easel (Filled)
+- Easel2 (Filled)
+- Easel3 (Filled)
+- Egg (Filled)
+- EggFried
+- Eject (Filled)
+- EmojiAngry (Filled)
+- EmojiAstonished (Filled)
+- EmojiDizzy (Filled)
+- EmojiExpressionless (Filled)
+- EmojiFrown (Filled)
+- EmojiGrimace (Filled)
+- EmojiGrin (Filled)
+- EmojiHeartEyes (Filled)
+- EmojiKiss (Filled)
+- EmojiLaughing (Filled)
+- EmojiNeutral (Filled)
+- EmojiSmile (Filled)
+- EmojiSmileUpsideDown (Filled)
+- EmojiSunglasses (Filled)
+- EmojiSurprise (Filled)
+- EmojiTear (Filled)
+- EmojiWink (Filled)
+- Envelope (Filled)
+- EnvelopeArrowDown (Filled)
+- EnvelopeArrowUp (Filled)
+- EnvelopeAt (Filled)
+- EnvelopeCheck (Filled)
+- EnvelopeDash (Filled)
+- EnvelopeExclamation (Filled)
+- EnvelopeHeart (Filled)
+- EnvelopeOpen (Filled)
+- EnvelopeOpenHeart (Filled)
+- EnvelopePaper (Filled)
+- EnvelopePaperHeart (Filled)
+- EnvelopePlus (Filled)
+- EnvelopeSlash (Filled)
+- EnvelopeX (Filled)
+- Eraser (Filled)
+- Escape
+- Ethernet
+- EvFront (Filled)
+- EvStation (Filled)
+- Exclamation
+- ExclamationCircle (Filled)
+- ExclamationDiamond (Filled)
+- ExclamationLg
+- ExclamationOctagon (Filled)
+- ExclamationSquare (Filled)
+- ExclamationTriangle (Filled)
+- Exclude
+- Explicit (Filled)
+- Exposure
+- Eye (Filled)
+- EyeSlash (Filled)
+- Eyedropper
+- Eyeglasses
+- Facebook
+- Fan
+- FastForward (Filled)
+- FastForwardBtn (Filled)
+- FastForwardCircle (Filled)
+- Feather
+- Feather2
+- File (Filled)
+- FileArrowDown (Filled)
+- FileArrowUp (Filled)
+- FileBarGraph (Filled)
+- FileBinary (Filled)
+- FileBreak (Filled)
+- FileCheck (Filled)
+- FileCode (Filled)
+- FileDiff (Filled)
+- FileEarmark (Filled)
+- FileEarmarkArrowDown (Filled)
+- FileEarmarkArrowUp (Filled)
+- FileEarmarkBarGraph (Filled)
+- FileEarmarkBinary (Filled)
+- FileEarmarkBreak (Filled)
+- FileEarmarkCheck (Filled)
+- FileEarmarkCode (Filled)
+- FileEarmarkDiff (Filled)
+- FileEarmarkEasel (Filled)
+- FileEarmarkExcel (Filled)
+- FileEarmarkFont (Filled)
+- FileEarmarkImage (Filled)
+- FileEarmarkLock (Filled)
+- FileEarmarkLock2 (Filled)
+- FileEarmarkMedical (Filled)
+- FileEarmarkMinus (Filled)
+- FileEarmarkMusic (Filled)
+- FileEarmarkPdf (Filled)
+- FileEarmarkPerson (Filled)
+- FileEarmarkPlay (Filled)
+- FileEarmarkPlus (Filled)
+- FileEarmarkPost (Filled)
+- FileEarmarkPpt (Filled)
+- FileEarmarkRichtext (Filled)
+- FileEarmarkRuled (Filled)
+- FileEarmarkSlides (Filled)
+- FileEarmarkSpreadsheet (Filled)
+- FileEarmarkText (Filled)
+- FileEarmarkWord (Filled)
+- FileEarmarkX (Filled)
+- FileEarmarkZip (Filled)
+- FileEasel (Filled)
+- FileExcel (Filled)
+- FileFont (Filled)
+- FileImage (Filled)
+- FileLock (Filled)
+- FileLock2 (Filled)
+- FileMedical (Filled)
+- FileMinus (Filled)
+- FileMusic (Filled)
+- FilePdf (Filled)
+- FilePerson (Filled)
+- FilePlay (Filled)
+- FilePlus (Filled)
+- FilePost (Filled)
+- FilePpt (Filled)
+- FileRichtext (Filled)
+- FileRuled (Filled)
+- FileSlides (Filled)
+- FileSpreadsheet (Filled)
+- FileText (Filled)
+- FileWord (Filled)
+- FileX (Filled)
+- FileZip (Filled)
+- Files
+- FilesAlt
+- FiletypeAac
+- FiletypeAi
+- FiletypeBmp
+- FiletypeCs
+- FiletypeCss
+- FiletypeCsv
+- FiletypeDoc
+- FiletypeDocx
+- FiletypeExe
+- FiletypeGif
+- FiletypeHeic
+- FiletypeHtml
+- FiletypeJava
+- FiletypeJpg
+- FiletypeJs
+- FiletypeJson
+- FiletypeJsx
+- FiletypeKey
+- FiletypeM4p
+- FiletypeMd
+- FiletypeMdx
+- FiletypeMov
+- FiletypeMp3
+- FiletypeMp4
+- FiletypeOtf
+- FiletypePdf
+- FiletypePhp
+- FiletypePng
+- FiletypePpt
+- FiletypePptx
+- FiletypePsd
+- FiletypePy
+- FiletypeRaw
+- FiletypeRb
+- FiletypeSass
+- FiletypeScss
+- FiletypeSh
+- FiletypeSql
+- FiletypeSvg
+- FiletypeTiff
+- FiletypeTsx
+- FiletypeTtf
+- FiletypeTxt
+- FiletypeWav
+- FiletypeWoff
+- FiletypeXls
+- FiletypeXlsx
+- FiletypeXml
+- FiletypeYml
+- Film
+- Filter
+- FilterCircle (Filled)
+- FilterLeft
+- FilterRight
+- FilterSquare (Filled)
+- Fingerprint
+- Fire
+- Flag (Filled)
+- Floppy (Filled)
+- Floppy2 (Filled)
+- Flower1
+- Flower2
+- Flower3
+- Folder (Filled)
+- FolderCheck
+- FolderMinus
+- FolderPlus
+- FolderSymlink (Filled)
+- FolderX
+- Folder2
+- Folder2Open
+- Fonts
+- Forward (Filled)
+- Front
+- FuelPump (Filled)
+- FuelPumpDiesel (Filled)
+- Fullscreen
+- FullscreenExit
+- Funnel (Filled)
+- Gear (Filled)
+- GearWide
+- GearWideConnected
+- Gem
+- GenderAmbiguous
+- GenderFemale
+- GenderMale
+- GenderNeuter
+- GenderTrans
+- Geo (Filled)
+- GeoAlt (Filled)
+- Gift (Filled)
+- Git
+- Github
+- Gitlab
+- Globe
+- GlobeAmericas
+- GlobeAsiaAustralia
+- GlobeCentralSouthAsia
+- GlobeEuropeAfrica
+- Globe2
+- Google
+- GooglePlay
+- GpuCard
+- GraphDown
+- GraphDownArrow
+- GraphUp
+- GraphUpArrow
+- Grid (Filled)
+- Grid1x2 (Filled)
+- Grid3x2
+- Grid3x2Gap (Filled)
+- Grid3x3
+- Grid3x3Gap (Filled)
+- GripHorizontal
+- GripVertical
+- HCircle (Filled)
+- HSquare (Filled)
+- Hammer
+- HandIndex (Filled)
+- HandIndexThumb (Filled)
+- HandThumbsDown (Filled)
+- HandThumbsUp (Filled)
+- Handbag (Filled)
+- Hash
+- Hdd (Filled)
+- HddNetwork (Filled)
+- HddRack (Filled)
+- HddStack (Filled)
+- Hdmi (Filled)
+- Headphones
+- Headset
+- HeadsetVr
+- Heart (Filled)
+- HeartArrow
+- HeartHalf
+- HeartPulse (Filled)
+- Heartbreak (Filled)
+- Hearts
+- Heptagon (Filled)
+- HeptagonHalf
+- Hexagon (Filled)
+- HexagonHalf
+- Highlighter
+- Highlights
+- Hospital (Filled)
+- Hourglass
+- HourglassBottom
+- HourglassSplit
+- HourglassTop
+- House (Filled)
+- HouseAdd (Filled)
+- HouseCheck (Filled)
+- HouseDash (Filled)
+- HouseDoor (Filled)
+- HouseDown (Filled)
+- HouseExclamation (Filled)
+- HouseGear (Filled)
+- HouseHeart (Filled)
+- HouseLock (Filled)
+- HouseSlash (Filled)
+- HouseUp (Filled)
+- HouseX (Filled)
+- Houses (Filled)
+- Hr
+- Hurricane
+- Hypnotize
+- Image (Filled)
+- ImageAlt
+- Images
+- Inbox (Filled)
+- InboxesFill
+- Inboxes
+- Incognito
+- Indent
+- Infinity
+- Info
+- InfoCircle (Filled)
+- InfoLg
+- InfoSquare (Filled)
+- InputCursor
+- InputCursorText
+- Instagram
+- Intersect
+- Journal
+- JournalAlbum
+- JournalArrowDown
+- JournalArrowUp
+- JournalBookmark (Filled)
+- JournalCheck
+- JournalCode
+- JournalMedical
+- JournalMinus
+- JournalPlus
+- JournalRichtext
+- JournalText
+- JournalX
+- Journals
+- Joystick
+- Justify
+- JustifyLeft
+- JustifyRight
+- Kanban (Filled)
+- Key (Filled)
+- Keyboard (Filled)
+- Ladder
+- Lamp (Filled)
+- Laptop (Filled)
+- LayerBackward
+- LayerForward
+- Layers (Filled)
+- LayersHalf
+- LayoutSidebar
+- LayoutSidebarInsetReverse
+- LayoutSidebarInset
+- LayoutSidebarReverse
+- LayoutSplit
+- LayoutTextSidebar
+- LayoutTextSidebarReverse
+- LayoutTextWindow
+- LayoutTextWindowReverse
+- LayoutThreeColumns
+- LayoutWtf
+- LifePreserver
+- Lightbulb (Filled)
+- LightbulbOff (Filled)
+- Lightning (Filled)
+- LightningCharge (Filled)
+- Line
+- Link
+- Link45deg
+- Linkedin
+- List
+- ListCheck
+- ListColumns
+- ListColumnsReverse
+- ListNested
+- ListOl
+- ListStars
+- ListTask
+- ListUl
+- Lock (Filled)
+- Luggage (Filled)
+- Lungs (Filled)
+- Magic
+- Magnet (Filled)
+- Mailbox
+- MailboxFlag
+- Mailbox2
+- Mailbox2Flag
+- Map (Filled)
+- Markdown (Filled)
+- MarkerTip
+- Mask
+- Mastodon
+- Medium
+- Megaphone (Filled)
+- Memory
+- MenuApp (Filled)
+- MenuButton (Filled)
+- MenuButtonWide (Filled)
+- MenuDown
+- MenuUp
+- Messenger
+- Meta
+- Mic (Filled)
+- MicMute (Filled)
+- Microsoft
+- MicrosoftTeams
+- Minecart
+- MinecartLoaded
+- Modem (Filled)
+- Moisture
+- Moon (Filled)
+- MoonStars (Filled)
+- Mortarboard (Filled)
+- Motherboard (Filled)
+- Mouse (Filled)
+- Mouse2 (Filled)
+- Mouse3 (Filled)
+- MusicNote
+- MusicNoteBeamed
+- MusicNoteList
+- MusicPlayer (Filled)
+- Newspaper
+- NintendoSwitch
+- NodeMinus (Filled)
+- NodePlus (Filled)
+- NoiseReduction
+- Nut (Filled)
+- Nvidia
+- Nvme (Filled)
+- Octagon (Filled)
+- OctagonHalf
+- Opencollective
+- OpticalAudio (Filled)
+- Option
+- Outlet
+- PCircle (Filled)
+- PSquare (Filled)
+- PaintBucket
+- Palette (Filled)
+- Palette2
+- Paperclip
+- Paragraph
+- Pass (Filled)
+- Passport (Filled)
+- PatchCheck (Filled)
+- PatchExclamation (Filled)
+- PatchMinus (Filled)
+- PatchPlus (Filled)
+- PatchQuestion (Filled)
+- Pause (Filled)
+- PauseBtn (Filled)
+- PauseCircle (Filled)
+- Paypal
+- Pc
+- PcDisplay
+- PcDisplayHorizontal
+- PcHorizontal
+- PciCard
+- PciCardNetwork
+- PciCardSound
+- Peace (Filled)
+- Pen (Filled)
+- Pencil (Filled)
+- PencilSquare
+- Pentagon (Filled)
+- PentagonHalf
+- People (Filled)
+- PersonCircle
+- Percent
+- Person (Filled)
+- PersonAdd
+- PersonArmsUp
+- PersonBadge (Filled)
+- PersonBoundingBox
+- PersonCheck (Filled)
+- PersonDash (Filled)
+- PersonDown
+- PersonExclamation
+- PersonFillAdd
+- PersonFillCheck
+- PersonFillDash
+- PersonFillDown
+- PersonFillExclamation
+- PersonFillGear
+- PersonFillLock
+- PersonFillSlash
+- PersonFillUp
+- PersonFillX
+- PersonGear
+- PersonHeart
+- PersonHearts
+- PersonLinesFill
+- PersonLock
+- PersonPlus (Filled)
+- PersonRaisedHand
+- PersonRolodex
+- PersonSlash
+- PersonSquare
+- PersonStanding
+- PersonStandingDress
+- PersonUp
+- PersonVcard (Filled)
+- PersonVideo
+- PersonVideo2
+- PersonVideo3
+- PersonWalking
+- PersonWheelchair
+- PersonWorkspace
+- PersonX (Filled)
+- Phone (Filled)
+- PhoneFlip
+- PhoneLandscape (Filled)
+- PhoneVibrate (Filled)
+- PieChart (Filled)
+- PiggyBank (Filled)
+- Pin (Filled)
+- PinAngle (Filled)
+- PinMap (Filled)
+- Pinterest
+- Pip (Filled)
+- Play (Filled)
+- PlayBtn (Filled)
+- PlayCircle (Filled)
+- Playstation
+- Plug (Filled)
+- Plugin
+- Plus
+- PlusCircle (Filled)
+- PlusCircleDotted
+- PlusLg
+- PlusSlashMinus
+- PlusSquare (Filled)
+- PlusSquareDotted
+- Postage (Filled)
+- PostageHeart (Filled)
+- Postcard (Filled)
+- PostcardHeart (Filled)
+- Power
+- Prescription
+- Prescription2
+- Printer (Filled)
+- Projector (Filled)
+- Puzzle (Filled)
+- QrCode
+- QrCodeScan
+- Question
+- QuestionCircle (Filled)
+- QuestionDiamond (Filled)
+- QuestionLg
+- QuestionOctagon (Filled)
+- QuestionSquare (Filled)
+- Quora
+- Quote
+- RCircle (Filled)
+- RSquare (Filled)
+- Radar
+- Radioactive
+- Rainbow
+- Receipt
+- ReceiptCutoff
+- ReceptionZero
+- ReceptionOne
+- ReceptionTwo
+- ReceptionThree
+- ReceptionFour
+- Record (Filled)
+- RecordBtn (Filled)
+- RecordCircle (Filled)
+- Record2 (Filled)
+- Recycle
+- Reddit
+- Regex
+- Repeat
+- RepeatOne
+- Reply (Filled)
+- ReplyAll (Filled)
+- Rewind (Filled)
+- RewindBtn (Filled)
+- RewindCircle (Filled)
+- Robot
+- Rocket (Filled)
+- RocketTakeoff (Filled)
+- Router (Filled)
+- Rss (Filled)
+- Rulers
+- Safe (Filled)
+- Safe2 (Filled)
+- Save (Filled)
+- Save2 (Filled)
+- Scissors
+- Scooter
+- Screwdriver
+- SdCard (Filled)
+- Search
+- SearchHeart (Filled)
+- SegmentedNav
+- Send (Filled)
+- SendArrowDown (Filled)
+- SendArrowUp (Filled)
+- SendCheck (Filled)
+- SendDash (Filled)
+- SendExclamation (Filled)
+- SendPlus (Filled)
+- SendSlash (Filled)
+- SendX (Filled)
+- Server
+- Shadows
+- Share (Filled)
+- Shield (Filled)
+- ShieldCheck
+- ShieldExclamation
+- ShieldFillCheck
+- ShieldFillExclamation
+- ShieldFillMinus
+- ShieldFillPlus
+- ShieldFillX
+- ShieldLock (Filled)
+- ShieldMinus
+- ShieldPlus
+- ShieldShaded
+- ShieldSlash (Filled)
+- ShieldX
+- Shift (Filled)
+- Shop
+- ShopWindow
+- Shuffle
+- SignDeadEnd (Filled)
+- SignDoNotEnter (Filled)
+- SignIntersection (Filled)
+- SignIntersectionSide (Filled)
+- SignIntersectionT (Filled)
+- SignIntersectionY (Filled)
+- SignMergeLeft (Filled)
+- SignMergeRight (Filled)
+- SignNoLeftTurn (Filled)
+- SignNoParking (Filled)
+- SignNoRightTurn (Filled)
+- SignRailroad (Filled)
+- SignStop (Filled)
+- SignStopLights (Filled)
+- SignTurnLeft (Filled)
+- SignTurnRight (Filled)
+- SignTurnSlightLeft (Filled)
+- SignTurnSlightRight (Filled)
+- SignYield (Filled)
+- Signal
+- Signpost (Filled)
+- SignpostTwo (Filled)
+- SignpostSplit (Filled)
+- Sim (Filled)
+- SimSlash (Filled)
+- SinaWeibo
+- SkipBackward (Filled)
+- SkipBackwardBtn (Filled)
+- SkipBackwardCircle (Filled)
+- SkipEnd (Filled)
+- SkipEndBtn (Filled)
+- SkipEndCircle (Filled)
+- SkipForward (Filled)
+- SkipForwardBtn (Filled)
+- SkipForwardCircle (Filled)
+- SkipStart (Filled)
+- SkipStartBtn (Filled)
+- SkipStartCircle (Filled)
+- Skype
+- Slack
+- Slash
+- SlashLg
+- SlashSquare (Filled)
+- Sliders
+- Sliders2
+- Sliders2Vertical
+- Smartwatch
+- Snapchat
+- Snow
+- Snow2
+- Snow3
+- SortAlphaDown
+- SortAlphaDownAlt
+- SortAlphaUp
+- SortAlphaUpAlt
+- SortDown
+- SortDownAlt
+- SortNumericDown
+- SortNumericDownAlt
+- SortNumericUp
+- SortNumericUpAlt
+- SortUp
+- SortUpAlt
+- Soundwave
+- Sourceforge
+- Speaker (Filled)
+- Speedometer
+- Speedometer2
+- Spellcheck
+- Spotify
+- Square (Filled)
+- SquareHalf
+- Stack
+- StackOverflow
+- Star (Filled)
+- StarHalf
+- Stars
+- Steam
+- Stickies (Filled)
+- Sticky (Filled)
+- Stop (Filled)
+- StopBtn (Filled)
+- StopCircle (Filled)
+- Stoplights (Filled)
+- Stopwatch (Filled)
+- Strava
+- Stripe
+- Subscript
+- Substack
+- Subtract
+- SuitClub (Filled)
+- SuitDiamond (Filled)
+- SuitHeart (Filled)
+- SuitSpade (Filled)
+- Suitcase (Filled)
+- SuitcaseLg (Filled)
+- Suitcase2 (Filled)
+- Sun (Filled)
+- Sunglasses
+- Sunrise (Filled)
+- Sunset (Filled)
+- Superscript
+- SymmetryHorizontal
+- SymmetryVertical
+- Table
+- Tablet (Filled)
+- TabletLandscape (Filled)
+- Tag (Filled)
+- Tags (Filled)
+- TaxiFront (Filled)
+- Telegram
+- Telephone (Filled)
+- TelephoneForward (Filled)
+- TelephoneInbound (Filled)
+- TelephoneMinus (Filled)
+- TelephoneOutbound (Filled)
+- TelephonePlus (Filled)
+- TelephoneX (Filled)
+- TencentQq
+- Terminal (Filled)
+- TerminalDash
+- TerminalPlus
+- TerminalSplit
+- TerminalX
+- TextCenter
+- TextIndentLeft
+- TextIndentRight
+- TextLeft
+- TextParagraph
+- TextRight
+- TextWrap
+- Textarea
+- TextareaResize
+- TextareaT
+- Thermometer
+- ThermometerHalf
+- ThermometerHigh
+- ThermometerLow
+- ThermometerSnow
+- ThermometerSun
+- Threads (Filled)
+- ThreeDots
+- ThreeDotsVertical
+- Thunderbolt (Filled)
+- Ticket (Filled)
+- TicketDetailed (Filled)
+- TicketPerforated (Filled)
+- Tiktok
+- ToggleOff
+- ToggleOn
+- Toggle2Off
+- Toggle2On
+- Toggles
+- Toggles2
+- Tools
+- Tornado
+- TrainFreightFront (Filled)
+- TrainFront (Filled)
+- TrainLightrailFront (Filled)
+- Translate
+- Transparency
+- Trash (Filled)
+- Trash2 (Filled)
+- Trash3 (Filled)
+- Tree (Filled)
+- Trello
+- Triangle (Filled)
+- TriangleHalf
+- Trophy (Filled)
+- TropicalStorm
+- Truck
+- TruckFlatbed
+- TruckFront (Filled)
+- Tsunami
+- Tv (Filled)
+- Twitch
+- Twitter
+- TwitterX
+- Type
+- TypeBold
+- TypeH1
+- TypeH2
+- TypeH3
+- TypeH4
+- TypeH5
+- TypeH6
+- TypeItalic
+- TypeStrikethrough
+- TypeUnderline
+- Ubuntu
+- UiChecks
+- UiChecksGrid
+- UiRadios
+- UiRadiosGrid
+- Umbrella (Filled)
+- Unindent
+- Union
+- Unity
+- UniversalAccess
+- UniversalAccessCircle
+- Unlock (Filled)
+- Upc
+- UpcScan
+- Upload
+- Usb (Filled)
+- UsbC (Filled)
+- UsbDrive (Filled)
+- UsbMicro (Filled)
+- UsbMini (Filled)
+- UsbPlug (Filled)
+- UsbSymbol
+- Valentine
+- Valentine2
+- VectorPen
+- ViewList
+- ViewStacked
+- Vignette
+- Vimeo
+- Vinyl (Filled)
+- Virus
+- Virus2
+- Voicemail
+- VolumeDown (Filled)
+- VolumeMute (Filled)
+- VolumeOff (Filled)
+- VolumeUp (Filled)
+- Vr
+- Wallet (Filled)
+- Wallet2
+- Watch
+- Water
+- Webcam (Filled)
+- Wechat
+- Whatsapp
+- Wifi
+- WifiOne
+- WifiTwo
+- WifiOff
+- Wikipedia
+- Wind
+- Window
+- WindowDash
+- WindowDesktop
+- WindowDock
+- WindowFullscreen
+- WindowPlus
+- WindowSidebar
+- WindowSplit
+- WindowStack
+- WindowX
+- Windows
+- Wordpress
+- Wrench
+- WrenchAdjustable
+- WrenchAdjustableCircle (Filled)
+- X
+- XCircle (Filled)
+- XDiamond (Filled)
+- XLg
+- XOctagon (Filled)
+- XSquare (Filled)
+- Xbox
+- Yelp
+- YinYang
+- Youtube
+- ZoomIn
+- ZoomOut
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Harshal Khairnar
+
+- GitHub: [Harshal Khairnar](https://github.com/khairnar2960)

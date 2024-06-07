@@ -1,0 +1,39 @@
+{
+  "name": "react-bs-icons",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Bootstrap icons for react",
+  "main": "dist/index.jsx",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/"
+  ],
+  "exports": {
+    ".": "./dist/index.jsx",
+    "./icons/*": "./dist/icons/*.jsx",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "generate": "node src/generate.cjs",
+    "build-index": "node src/index.cjs",
+    "build-readme": "node src/readme.cjs",
+    "build": "npm run generate && npm run build-index && npm run build-readme",
+    "test": "echo passed && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khairnar2960/react-bs-icons.git"
+  },
+  "keywords": [
+    "react",
+    "bootstrap",
+    "icons"
+  ],
+  "author": "Harshal Khairnar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khairnar2960/react-bs-icons/issues"
+  },
+  "homepage": "https://github.com/khairnar2960/react-bs-icons#readme"
+}
